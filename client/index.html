@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tinder | Programming 2: Front-End Advanced | Associate Degree in Computer Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./static/css/main.css" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="website__title">Tinder</h1>
+    </header>
+    
+
+    <main class="main">
+        
+
+        <section class="users">
+            <h2 class="users__title">Users</h2>
+            <ul class="users__list">
+            </ul>
+        </section>
+
+        <section class="messages">
+            <h2>Messages</h2>
+            <div class="messages__received">
+                <div class="container--amount">
+                    <h3 class="messages__received__title">Inbox</h3>
+                    <span class="amount">0</span>
+                </div>
+                <ul class="messages__received__list">
+                </ul>
+            </div>
+
+            <div class="messages__sent">
+                <div class="container--amount">
+                    <h3 class="messages__sent__title">Sent</h3>
+                    <span class="amount">0</span>
+                </div>
+                <ul class="messages__sent__list">
+                </ul>
+            </div>
+        </section>
+
+        <section class="conversation">
+            <div class="container__conversation">
+                <h2 class="conversation__title">Conversation</h2>
+                <div class="conversation__image-and-user">
+
+                </div>
+            </div>
+            <ul class="conversation__list">
+            </ul>
+
+            <div class="container__form__send__message">
+                <form id="form__send__message" method="POST" action="#">
+                    <div class="form__input-and-button">
+                        <input name="txtMessage" id="txtMessage" type="text" placeholder="Type our message..." cols="30" rows="10"></input>
+                        <button type="submit" id="verzend__button">Verzenden</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="matchmaker">
+            <h2>Match maker</h2>
+            <div class="matchmaker__no-match">
+                <div class="container--amount--matches">
+                    <h3 class="matchmaker__no-match__title">No matches</h3>
+                    <span class="amount--no-matches">0</span>
+                </div>
+                <ul class="matchmaker__no-match__list">
+                </ul>
+            </div>
+
+            <div class="matchmaker__match">
+                <div class="container--amount--matches">
+                    <h3 class="matchmaker__match__title">Matches</h3>
+                    <span class="amount--matches">0</span>
+                </div>
+                <ul class="matchmaker__match__list">
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="./static/js/services.js"></script>
+    <script src="./static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinslight';
+  src: url('../fonts/poppins-lightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+section {
+  border-right: 4px solid black;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding: 1.245rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 4px solid black;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 1rem;
+  color: white;
+  
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.selected {
+  background-color: rgb(63, 76, 137);
+}
+
+.selected p,
+.selected span {
+  color: white;
+}
+
+.main{
+  display: flex;
+
+}
+
+.users {
+  min-width: 20%;
+  height: calc(100vh -  3.3125rem);
+  overflow-y: auto;
+}
+
+.users__list-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.users__list-item__link {
+  display: flex;
+  align-items: center;
+}
+
+.users__list-item__link__img {
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 3px solid rgb(115, 29, 93);
+  padding: 0.1rem;
+}
+
+.messages {
+  min-width: 20rem;
+  width: 20%;
+}
+
+.messages__received__list {
+  height: 40vh;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  border-bottom: 4px solid black;
+}
+
+.messages__received__list-item {
+  padding: 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+
+.messages__sent__list {
+  height: 35vh;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.messages__sent__list-item {
+  padding: 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+
+.conversation {
+  min-width: 20rem;
+  width: 38%;
+  outline: 2px solid black;  
+}
+
+.conversation__list {
+  overflow-y: auto;
+  height: 75.5vh;
+  margin-bottom: 0;
+}
+
+.conversation__message__received {
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  background-color: rgb(115, 29, 93);
+  border-radius: 1rem;
+  color: white;
+}
+
+.conversation__message__sent {
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  margin-left: 1rem;
+  margin-right: 5rem;
+  background-color: rgb(43, 50, 88);
+  border-radius: 1rem;
+  color: white;
+}
+
+.matchmaker {
+  min-width: 20%;
+  max-width: 20%;
+}
+
+
+.container--amount {
+  display: flex;
+  padding-right: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid black;
+  background-color: rgb(57, 57, 57);
+  color: white;
+}
+
+.container--amount span {
+  font-size: 1.5rem;
+  font-family: 'poppins';
+  font-weight: bold;
+}
+
+.container--amount--matches {
+  display: flex;
+  padding-right: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid black;
+  background-color: rgb(57, 57, 57);
+  color: white;
+}
+
+.container--amount--matches span {
+  font-size: 1.5rem;
+  font-family: 'poppins';
+  font-weight: bold;
+}
+
+.message__convo {
+  margin-bottom: 0.5rem;
+}
+
+.date__message {
+  font-size: 0.7rem;
+  color:rgb(0, 0, 0);
+}
+
+.container__conversation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid black;
+}
+
+.conversation__title {
+  border-bottom: 0px;
+}
+
+.conversation__image-and-user {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.conversation__image-and-user img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 3px solid rgb(115, 29, 93);
+  padding: 0.1rem;
+}
+
+.container__messages__name-and-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.messages__sent__name {
+  font-weight: bold;
+  color: rgb(241, 58, 195);
+}
+
+.messages__sent__name--sent {
+  color: rgb(66, 224, 216);
+}
+
+.container__form__send__message {
+  background: rgb(28, 131, 175);
+  height: 6.5vh;
+  padding: 1rem;
+  border-top: 4px solid black;
+}
+
+.form__input-and-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+#txtMessage {
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0;
+  padding-left: 1rem;
+  height: 4rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form__input-and-button button {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.matches__list-item {
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.flex__image-and-info {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.flex__image-and-info p {
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.matchmaker__no-match__list {
+  height: 40vh;
+  overflow: auto;
+  margin: 0;
+}
+
+.flex__image-and-info img {
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 3px solid rgb(115, 29, 93);
+  padding: 0.1rem;
+}
+
+.flex__age-and-gender {
+  display: flex;
+}
+
+.age::after {
+  content: '/';
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.date__message--conversation {
+  color: rgb(243, 248, 153);
+}
+
+.flex-svg  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 2rem;
+}
+
+.flex-svg svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.button__svg {
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  cursor: pointer;
+}
+
+.flex-svg--X {
+  fill: rgb(255, 0, 0);
+  opacity: 0.2;
+}
+
+.flex-svg--heart {
+  fill: rgb(0, 255, 0);
+  opacity: 0.2;
+}
+
+.flex-svg--star {
+  fill: rgb(184, 0, 184);
+  opacity: 0.2;
+}
+
+.opacity__full {
+  opacity: 1;
+}
+
+.response--question {
+  display: flex;
+  align-items: center;
+}
+
+.response--svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+.container--info--match {
+  width: 9rem;
+}
+
+.matchmaker__match__list {
+  overflow: auto;
+  height: 35vh;
+  margin: 0;
+}
+
+.svg--question--mark {
+  width: 2-1rem;
+  height: 1rem;
+  
+}
+
+.svg--question--mark svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.response--like {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.response--svg--star {
+  fill: rgb(220, 24, 220);
+}
+
+.response--svg--dislike {
+  fill: red;
+}
+
+.response--svg--like {
+  fill: rgb(0, 255, 0);
+}
